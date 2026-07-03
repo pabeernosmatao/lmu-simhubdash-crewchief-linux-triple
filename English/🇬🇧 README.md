@@ -20,13 +20,18 @@ Navigate to the folder where you downloaded the installers.
 4. Install SimHubDash and CrewChief
 Run the commands contained in Install_Simhubdash_and_Crewchief.txt.
 Important: Update the Proton path/version and the installer filenames for SimHubDash and CrewChief to match the versions you are using.
+- Crewchief: After install do not run it if the installer asks
+- Simhubdash Uncheck - Install .NET Runtime
+                     - Install USB Display Drivers
+                     - Install Visual C++ Redistributables      
+                     - After install do not run it if the installer asks
 
-5. Create the launch script
+6. Create the launch script
 Create a script named xxxx.sh using the contents of Launch_Simhub_And_Crewchief.txt.
 Save it wherever you prefer and make it executable.
 Remember to update the Proton path if necessary.
 
-6. Launch SimHubDash and CrewChief
+7. Launch SimHubDash and CrewChief
 Run xxxx.sh.
 Both applications should start correctly.
 Configure the telemetry plugins in each application.
