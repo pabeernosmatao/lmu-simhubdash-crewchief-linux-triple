@@ -24,8 +24,8 @@ Complete guide for setting up Le Mans Ultimate on Linux with SimHubDash and Crew
 
 ## 📁 Structure
 
-- `ES/` → Full Spanish guide
-- `EN/` → Full English guide
+- `Spanish/` → Full Spanish guide
+- `English/` → Full English guide
 
 ---
 
