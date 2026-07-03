@@ -1,0 +1,19 @@
+
+
+protontricks 2399420 dotnet48
+
+
+protontricks 2399420 corefonts
+
+
+export STEAM_COMPAT_DATA_PATH="$HOME/.local/share/Steam/steamapps/compatdata/2399420"
+export PROTON_PATH="$HOME/.local/share/Steam/compatibilitytools.d/GE-Proton10-34-LMU-hid_fixes"
+export WINEPREFIX="$STEAM_COMPAT_DATA_PATH/pfx"
+
+
+
+"$PROTON_PATH/files/bin/wine" msiexec /i "$HOME/Descargas/CrewChiefV4.msi"
+
+
+
+"$PROTON_PATH/files/bin/wine" "$HOME/Descargas/SimHubCustomInstall.exe"

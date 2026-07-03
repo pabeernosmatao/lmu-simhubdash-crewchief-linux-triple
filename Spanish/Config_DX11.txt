@@ -1,0 +1,42 @@
+//[[gMa1.002f (c)2016    ]] [[            ]]
+[COMPONENTS]
+VideoGUID=000073BF-0000-0000-0000-000000000000
+VideoDriver=1
+VideoResW=7680
+VideoResH=1440
+VideoRefreshRate=120
+VideoMode=23
+VideoRefresh=23
+WindowedMode=1
+Borderless=0
+VrMirror=0
+EPostProcessingSettings=1
+MSAA=4
+VSyncMode=0
+UseFXAA=0
+ShaderLevel=0
+SubViews=2
+UseSubViewParams=2
+WorkaroundFlags=0
+ViewParams=(0.540, 0.340, 0.600, 15.000, 0.037) // screen width (m), screen height (m), eye distance (m), side angle (deg), bezel gap (m)
+LeftView=(0.540, 0.340, 0.600, 15.000, 0.037)
+RightView=(0.540, 0.340, 0.600, 15.000, 0.037)
+PreferredGPU=-1
+WidescreenUI=0
+WidescreenUIWidth=-1
+WidescreenHUD=0
+CustomVidRes=(7680, 1440)
+VRUIScale=(1.000, 1.000, 1.000)
+MinimumVidRes=(800, 600)
+MaximumVidRes=(99999, 99999)
+
+[INSTALL]
+InstallFrom=
+InstallTo=
+
+[AUTOLAUNCH]
+Mode=Off
+LaunchTime=600
+
+[VERSION]
+Version=-1.000000
