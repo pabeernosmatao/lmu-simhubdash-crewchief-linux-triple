@@ -1,36 +1,35 @@
 # LMU SimHubDash CrewChief Linux Triple Monitor Guide
 
-Complete guide for setting up Le Mans Ultimate on Linux with SimHubDash and CrewChief, including a working triple monitor configuration (7680×1440).
+Complete guide for setting up Le Mans Ultimate on Linux with SimHubDash and CrewChief, including triple monitor configuration (7680×1440).
+Guía completa para configurar Le Mans Ultimate en Linux con SimHubDash y CrewChief, incluida la configuración de triple monitor (7680×1440).
+
+---
+
+## 📸 Screenshots
+
+### SimHubDash Dashboard
+
+![SimHub](Spanish/Simhub.png)
+
+### Triple Monitor Setup
+
+![Triple Monitor](Spanish/Simhub_triple.png)
+
+### Window Rule KDE Plasma
+
+![Window Rule](Spanish/Regla_de_ventana.png)
 
 ---
 
 ## 🌍 Languages
 
-- 🇪🇸 Spanish → `Spanish/`
-- 🇬🇧 English → `English/`
-
----
-
-## 🚀 What this project includes
-
-- Le Mans Ultimate (LMU) on Linux (CachyOS + KDE Plasma)
-- SimHubDash telemetry, dashboards and overlays
-- CrewChief integration
-- Triple monitor setup (7680×1440 @ 144Hz)
-- Wayland support
-- No Gamescope required
-
----
-
-## 📁 Structure
-
-- `Spanish/` → Full Spanish guide
-- `English/` → Full English guide
+- 🇪🇸 Spanish guide → `Spanish/`
+- 🇬🇧 English guide → `English/`
 
 ---
 
 ## ⚠️ Notes
 
 - Tested on CachyOS + KDE Plasma
-- Designed for Wayland
-- Triple monitor setup included
+- Wayland setup
+- No Gamescope required
