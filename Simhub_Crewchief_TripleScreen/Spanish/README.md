@@ -19,7 +19,6 @@ El objetivo de esta documentación es reunir en un único lugar todo lo necesari
 Esta carpeta incluye:
 
 - 📄 Guía completa de instalación (Español)
-- 📄 Complete Installation Guide (English)
 - 📄 Scripts de instalación
 - 📄 Scripts de inicio
 - 📄 Archivos de configuración para triple monitor
