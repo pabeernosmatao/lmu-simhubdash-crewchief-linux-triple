@@ -39,7 +39,7 @@ Guide for setting up Le Mans Ultimate on Linux with SimHubDash and CrewChief, in
 
 ## SimHubDash
 
-![SimHub](Spanish/Simhub.png)
+![SimHub](Simhub_Crewchief_TripleScreen/Spanish/Simhub.png)
 
 ---
 
