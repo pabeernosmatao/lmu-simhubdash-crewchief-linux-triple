@@ -39,16 +39,16 @@ Guide for setting up Le Mans Ultimate on Linux with SimHubDash and CrewChief, in
 
 ## SimHubDash
 
-![SimHub](Simhub_Crewchief_TripleScreen/Spanish/Simhub.png)
+![SimHub](Spanish/Simhub.png)
 
 ---
 
 ## Triple Monitor Setup
 
-![Triple Monitor](Simhub_Crewchief_TripleScreen/Spanish/Simhub_triple.png)
+![Triple Monitor](Spanish/Simhub_triple.png)
 
 ---
 
 ## KDE Plasma Window Rule
 
-![Window Rule](Simhub_Crewchief_TripleScreen/Spanish/Regla_de_ventana.png)
+![Window Rule](Spanish/Regla_de_ventana.png)
