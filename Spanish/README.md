@@ -1,8 +1,8 @@
-### 🏎️ SimHubDash + CrewChief para Le Mans Ultimate en Linux
+### 🏎️ Guía Completa de Instalación: SimHubDash + CrewChief para Le Mans Ultimate en Linux
 
-Guía completa de instalación y configuración de **Le Mans Ultimate (LMU)**, **SimHubDash** y **CrewChief** en sistemas Linux (enfocada en **CachyOS / Arch** con **KDE Plasma**). 
+Esta guía detalla paso a paso cómo instalar y configurar **Le Mans Ultimate (LMU)**, **SimHubDash** y **CrewChief** en sistemas Linux (enfocada en **CachyOS / Arch** con **KDE Plasma**). 
 
-Este manual detalla cómo lograr una configuración nativa de **triple pantalla (7680×1440 @ 144 Hz) bajo Wayland sin utilizar Gamescope**. 
+Aprenderás a lograr una configuración nativa de **triple pantalla (7680×1440 @ 144 Hz) bajo Wayland sin utilizar Gamescope**. 
 
 ### 📋 Requisitos Previos e Información Importante
 
@@ -16,7 +16,7 @@ Este manual detalla cómo lograr una configuración nativa de **triple pantalla 
 
 1. Instala **Le Mans Ultimate** desde Steam.
 2. Ejecútalo utilizando la versión de **Proton** recomendada para la versión actual del juego.
-3. **⚠️ Muy importante:** Utiliza **únicamente un monitor** para esta configuración inicial.
+3. **⚠️ Muy importante:** Utiliza **únicamente un monitor** para esta configuración inicial (puedes tener más monitores conectados, pero no intentes configurar la triple pantalla todavía).
 4. Configura por completo tu volante, pedales, asignación de botones y resto de periféricos.
 5. Cierra el simulador al terminar.
 6. Deja las *Opciones de lanzamiento* de Steam **completamente vacías** por ahora.
@@ -25,12 +25,12 @@ Este manual detalla cómo lograr una configuración nativa de **triple pantalla 
 
 Descarga las versiones más recientes de los instaladores para Windows de: 
 
-* [SimHubDash](/goto?url=CAESPgHrOzAVRSdBiQuWuJwHriGVHGvol3pmsR_sd_1MLRgz3-7iq7MgRv_lfMFCKou4-dsHNsYRkQyijK3VSab2)
-* [CrewChief](/goto?url=CAESPAHrOzAVS0tCcZ3BgS4ElXC3Rc1DWNwuttEDb4-ZNLquK6uPMyrfmi5gPfVeLcEXgGJ08YyACHVAKrC-JA)
+* [SimHubDash](/goto?url=CAESPgHrOzAVveVn29kPKq6F0OlrXsYTDUu8MlkTa0nGt8GGu8xhfAi3o_ZaYFxuLa7OLfhtN6UB-82-Q_8npxTp)
+* [CrewChief](/goto?url=CAESPAHrOzAVNBFkOxSewY2NZi4gRL97RSaJB3qvRL2-kgg9ji_pOtTtByzP1toZggpHrGgDgNFVtNOali5fpA)
 
 ### 3. Instalación mediante Terminal
 
-Abre una terminal en la carpeta donde descargaste los instaladores y ejecuta los comandos contenidos en el archivo Instala_Simhubdash_y_Crewchief.txt de este repositorio. 
+Abre una terminal en la carpeta donde descargaste los instaladores y ejecuta los comandos contenidos en el archivo Instala_Simhubdash_y_Crewchief.txt de la raíz de este repositorio. 
 
 📝 **Nota sobre las rutas:** Recuerda actualizar en los comandos la ruta de Proton y los nombres exactos de los instaladores que descargaste. 
 
@@ -64,6 +64,8 @@ Crea un archivo de script llamado lanzar_apps.sh (o el nombre que prefieras) y c
   * Vuelve a configurar los plugins de telemetría.
 4. Una vez validado el funcionamiento de la telemetría, cierra todo en este orden estricto: **SimHub/CrewChief ➡️ Le Mans Ultimate**.
 
+📝 *Nota:* La activación de la telemetría puede resultar algo inconsistente. Normalmente funciona con el simulador cerrado (Paso 2.1), aunque en algunas ocasiones solo se activa cuando LMU ya está en ejecución (Paso 2.2). Si no funciona al primer intento, vuelve a intentarlo; tarde o temprano terminará conectando correctamente. 
+
 ### 3. Configuración del Cortafuegos (Firewall)
 
 Para que SimHubDash se comunique con tablets, smartphones o pantallas externas conectadas a la red local: 
@@ -81,11 +83,11 @@ Para que SimHubDash se comunique con tablets, smartphones o pantallas externas c
 
 bash
 
-~/.steam/steam/steamapps/common/Le Mans Ultimate/UserData/Config_DX11.ini
+/home/TU_USUARIO/.steam/steam/steamapps/common/Le Mans Ultimate/UserData/Config_DX11.ini
 
 Usa el código con precaución.
-2. Sustituye por completo su contenido con el texto del archivo Config_DX11.txt incluido en este repositorio.
-3. *Si tu resolución combinada es distinta de 7680×1440, modifica únicamente las líneas correspondientes a la resolución dentro del archivo.*
+2. Sustituye por completo su contenido con el texto del archivo Config_DX11.txt incluido en la raíz de este repositorio.
+3. *Si tu resolución combinada es distinta de 7680×1440, modifica únicamente las líneas correspondientes a la resolución dentro del archivo y deja el resto sin cambios por ahora.*
 
 ### 2. Configuración In-Game
 
@@ -98,19 +100,19 @@ Usa el código con precaución.
 
 ### 3. Solución de Problemas de Ventana (Si solo se despliega en 2 monitores)
 
-Si el juego no se extiende de forma automática por las tres pantallas, crearemos una regla de ventana nativa en KDE Plasma: 
+Si LMU se extiende correctamente por los tres monitores, pasa al siguiente punto. Si el juego no se extiende de forma automática y solo ocupa dos pantallas, crearemos una regla de ventana nativa en KDE Plasma: 
 
 1. Con LMU abierto, ve a: Configuración del sistema ➡️ Gestión de ventanas ➡️ Reglas de ventanas.
 2. Crea una nueva regla y selecciona la ventana activa de LMU.
-3. Configúrala replicando los parámetros visuales que se muestran en la imagen Regla_de_ventan.png de este repositorio. 
+3. Configúrala utilizando los parámetros mostrados en la imagen Regla_de_ventan.png de este repositorio. 
 
-  * *Nota: La posición de la ventana por defecto suele ser 0,0. Si usas pantallas auxiliares superiores (como un 4º monitor), ajusta el eje Y de la regla según corresponda (ej. 0,1080).*
-4. Aplica los cambios, cierra el simulador y vuelve a abrirlo.
+  * *Nota: La posición de la ventana puede variar respecto al ejemplo. Por defecto suele ser 0,0. En mi caso está configurada en 0,1080 porque tengo un cuarto monitor situado encima del conjunto de tres pantallas. Según tu configuración, ajusta el valor.*
+4. Aplica los cambios, cierra el simulador y vuelve a abrirlo. Ahora debería extenderse correctamente.
 
 ### 4. Ajustes Finales y Frecuencia de Refresco
 
 1. Entra a una pista y ajusta los valores del FOV y la alineación física/ángulos de tus pantallas desde los menús internos del juego. Cierra el simulador.
-2. Vuelve a abrir el archivo Config_DX11.ini para verificar que la tasa de refresco coincida exactamente con la de tus monitores (ej. 144, 120, etc.). Guarda los cambios.
+2. Vuelve a abrir el archivo Config_DX11.ini para verificar que la tasa de refresco coincida exactamente con la de tus monitores (ej. 144, 120, etc.). Si es necesario, ajústala y guarda los cambios.
 
 ### 🕹️ Opciones de Lanzamiento de Steam
 
@@ -122,7 +124,7 @@ PROTON_USE_NTSYNC=1 PROTON_FSR4_UPGRADE=1 PROTON_ENABLE_HDR=1 PROTON_ENABLE_WAYL
 
 Usa el código con precaución.
 
-*Recuerda que lo indispensable de esta línea es mantener el entorno nativo de Wayland y evitar por completo invocar herramientas como Gamescope.* 
+*Recuerda que lo indispensable de esta línea es mantener el entorno nativo de Wayland y evitar por completo invocar herramientas como Gamescope para asegurar la comunicación entre aplicaciones.* 
 
 ### 🔄 Flujo de Trabajo Recomendado (Orden de Ejecución)
 
@@ -148,7 +150,7 @@ Para evitar problemas de pérdida de paquetes de telemetría o cuelgues, utiliza
 
 Este manual y sus configuraciones asociadas han sido posibles gracias al excelente trabajo de investigación previo desarrollado por **srlemke**. La solución para extender las tres pantallas bajo Wayland sin depender de Gamescope adapta directamente sus scripts y su guía técnica original. 
 
-* 🔗 [Guía Original: LMU Linux Triples (Gist de srlemke)](/goto?url=CAESYwHrOzAVTNCS4W6UDWvST_N_R8qeYNf5gU-5RsaC8xJaebuVXwFM5sSJZcMdBWC96Ev7Iu1wE8ENyQWvqyEUEAWCzEEI3b9TiBPICWFnYjmumZp9H8bOoL8MxYZ_5k-mf5dMkg)
-* 🔗 [Colección completa de optimizaciones y scripts de srlemke](/goto?url=CAESQgHrOzAVDrBQAI51Wcr7xNWCZoftZoMv2j3GBQnWcjTZzirChPbCL_Ho-6x83aFM_MoaidN41wyzRYlOnK_w0ol3Sg)
+* 🔗 [Guía Original: LMU Linux Triples (Gist de srlemke)](/goto?url=CAESYwHrOzAVM-XcGfxFIc47O6P6clQ2p0hyP4TQ79jVNc3HZV7J9M9rKKaw9_ePtmY_Z_GdnCpSUnPZx-wdSgGyLdPDU8_1oIby0RnsU1ydYSFB9pNZQNSBgxUwVlGVqNzVcex9qQ)
+* 🔗 [Colección completa de optimizaciones y scripts de srlemke](/goto?url=CAESQgHrOzAVpultWfS67mZbz_1NAyycVjhnki9ZYzIILdciQz3kvdNvb8GPWKlKIYIxNV4TahMT-1qbhxLAnSIPoDUQNg)
 
 🏁 **¡Nos vemos en la pista! Disfruta de tu simulador en Linux.**
